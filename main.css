@@ -10,7 +10,7 @@ html {
   background-position: cover;
 }
 .navbar-brand {
-  background-image: #ffffff;
+  background-image: #7ac142;
   position: left;
 }
 .menu-bar {
@@ -26,7 +26,7 @@ html {
   text-align: right;
   margin-right: 20px;
 }
-.menu-bar .navbar-togger {
+.navbar-togger {
   padding-right: 20px;
   outline: none !important;
   border: none !important;
@@ -40,7 +40,7 @@ html {
   border-bottom: 1px solid #002a5c;
 }
 .navbar-brand img {
-  width: 350px;
+  width: 500px;
   margin-top: 10px;
   margin-left: 30px;
 }
@@ -49,37 +49,19 @@ html {
     border-bottom: none !important;
   }
 }
+button {
+  color: #002a5c !important;
+  float: right;
+  width: 75px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #002a5c, #7ac142);
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
 body {
   margin: 0;
   padding: 0;
-  background: #7ac142;
-}
-search-box {
-  position: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  background: #7ac142;
-  border-radius: 40px;
-  padding: 10px;
-}
-.search-btn {
-  color: #7ac142;
-  float: right;
-  width: 27px;
-  height: 30px;
-  border-radius: 50%;
-  background: #7ac142;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.search-txt {
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  color: #002a5c;
-  font-size: 16px;
-  transition: 0.4s;
+  background: linear-gradient(-360deg, #002a5c, #7ac142);
 }
