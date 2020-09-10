@@ -1,19 +1,3 @@
-function saveMyData(event) {
-  jQuery.post(
-      '/event/save', 
-      {
-          title: event.title,
-          start: event.start,
-          end: event.end,
-          url: event.url
-      }
-  );
-}
-//var a = [{ "title": "new appointment", "start": "2020-09-09"  }];
-//var a = JSON.stringify(a);
-//localStorage.setItem("event", a);
-
-
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
 
@@ -22,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],//these are included above this script tag in HTML, includes core components
 
     header: {
-      right: 'addEventButton'//we can change position between 'left' 'right' and 'center'
+      center: 'addEventButton'//we can change position between 'left' 'right' and 'center'
     },
 
     events: JSON.parse(localStorage.getItem("event")),
