@@ -15,9 +15,9 @@ async function sendApiRequest(user_search_input){
   var new_recipe = "";
   for (var i=0; i<max; i++) {
     new_recipe += ` 
-    <div class="card" style="width: 18rem;">
+    <div class="card recipe-card" style="width: 18rem;">
         <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body ">
         <h5 class="card-title">${data.hits[i].recipe.label}</h5>
         <p class="card-text">Source: ${data.hits[i].recipe.source}</p>
         <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Click for the recipe</a>
@@ -26,10 +26,23 @@ async function sendApiRequest(user_search_input){
     `
 // *****provide function to hand off ronan the recipe name and URL
 // give name and give url function   
+
+// I need a GetUrl() and a GetTitle() 
+// function in the recipe script that returns the title and url from whatever recipe the user selects in recipe.js
+
+        console.log(new_recipe);
+        document.querySelector("#content").innerHTML = new_recipe;
+    }
+
+  var recipeUrl;
+  var recipeTitle;
+  $(".recipe-card").on("click", function() {
+     recipeUrl = $(this).children("a").attr("href");
+     console.log(recipeUrl);
+     recipeTitle = $(this).children(".card-title").text();
+     console.log(recipeTitle);
+  })
   
-    console.log(new_recipe);
-  document.querySelector("#content").innerHTML = new_recipe;
-  }
 
   }
   (function () {
