@@ -1,3 +1,6 @@
+var saveEvent = [];
+saveEvent = JSON.parse(localStorage.getItem("event"));
+
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
 
@@ -9,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       center: 'addEventButton'//we can change position between 'left' 'right' and 'center'
     },
 
-    events: JSON.parse(localStorage.getItem("event")),
+    events: saveEvent,
 
     customButtons: {//this lets us create the button for add event
       addEventButton: {
@@ -20,13 +23,16 @@ document.addEventListener('DOMContentLoaded', function() {
           var title = "test";
           var url = "https://google.com";
 
-          var saveEvent = [{
-            title: title,
-            start: date,
-            end: date,
-            allDay: true,
-            url: url
-          }];
+          saveEvent.push
+          (
+            {
+              title: title,
+              start: date,
+              end: date,
+              allDay: true,
+              url: url
+            }
+          )
 
           localStorage.setItem("event", JSON.stringify(saveEvent));
 
