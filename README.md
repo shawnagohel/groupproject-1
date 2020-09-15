@@ -6,6 +6,9 @@ We created this project as part of our class requirements.  After seeing what a 
 ## Code style
 We built this using Bootstrap, CSS, HTML, Javascript
 ## Screenshots
+<img width="1514" alt="screenshot1" src="https://user-images.githubusercontent.com/68178433/93165495-13435900-f6d1-11ea-9f90-3f8097c341fa.png">
+<img width="1514" alt="screenshot2" src="https://user-images.githubusercontent.com/68178433/93165636-6c12f180-f6d1-11ea-8e4b-7e46240aac45.png">
+
 
 ## Features
 Users can search and save meals to an easy to use Calendar.
