@@ -6,6 +6,8 @@ We created this project as part of our class requirements.  After seeing what a 
 ## Code style
 We built this using Bootstrap, CSS, HTML, Javascript
 ## Screenshots
+![](screenshots/screenshot1.png)
+![](screenshots/screenshot2.png)
 
 ## Features
 Users can search and save meals to an easy to use Calendar.
