@@ -14,12 +14,11 @@ We built this using Bootstrap, CSS, HTML, Javascript
 Users can search and save meals to an easy to use Calendar.
 Code Example
 
-## Installation
+## Usage
+The usage of the app is pretty simple. The first stage is to look up a meal using the search bar, and then when the meals appear search for the one that's right for you. When you know what you want to make, click the highlighted blue text. Now after a meal is selected, its saved to the page, and by clicking the 'add meal' button and inputting a date when prompted, your meal choice is saved to the calendar.
 
 ## API Reference
-We used Edamam for the recipes and  (Ronan) for the calendar. 
-How to use?
-
+We used Edamam for the recipes and we used FullCalendar API to construct the calendar. 
 
 ## Credits
 Monthly Calendar in Javascript by Ronan
